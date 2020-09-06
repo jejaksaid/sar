@@ -31,7 +31,7 @@ class LoginForm(QWidget):
 	def check_password(self):
 		msg = QMessageBox()
 
-		if self.lineEdit_username.text() == 'Usernmae' and self.lineEdit_password.text() == '000':
+		if self.lineEdit_username.text() == 'Username' and self.lineEdit_password.text() == '000':
 			msg.setText('Success')
 			msg.exec_()
 			app.quit()
@@ -45,4 +45,4 @@ if __name__ == '__main__':
 	form = LoginForm()
 	form.show()
 
-        sys.exit(app.exec_())
+sys.exit(app.exec_())
